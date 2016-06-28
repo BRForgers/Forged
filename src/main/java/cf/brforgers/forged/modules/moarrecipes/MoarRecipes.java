@@ -19,10 +19,7 @@ import net.minecraftforge.common.config.Property;
 
 import org.apache.commons.lang3.RandomUtils;
 
-import cf.brforgers.forged.CFG;
-import cf.brforgers.forged.CFG.FOUNDATION;
-import cf.brforgers.forged.CFG.FOUNDATION.MOARRECIPES;
-import cf.brforgers.forged.Forged;
+import cf.brforgers.forged.ForgedMod;
 import cf.brforgers.forged.modules.base.ForgedEvent;
 import cf.brforgers.forged.modules.base.ForgedEventState;
 import cf.brforgers.forged.modules.base.SimplerModule;
@@ -37,26 +34,26 @@ public class MoarRecipes extends SimplerModule
 	
 	@Override
 	public void load(ForgedEvent event) {
-		if(CFG.FOUNDATION.MOARRECIPES.SHAPED_RECIPES)
-		{
+		//if(CFG.FOUNDATION.MOARRECIPES.SHAPED_RECIPES)
+		//{
 			logger.info("Adding Shapeless Recipes...");
 			addShapeless();
-		}
-		if(CFG.FOUNDATION.MOARRECIPES.SHAPELESS_RECIPES)
-		{
+		//}
+		//if(CFG.FOUNDATION.MOARRECIPES.SHAPELESS_RECIPES)
+		//{
 			logger.info("Adding Shaped Recipes...");
 			addShaped();
-		}
-		if(CFG.FOUNDATION.MOARRECIPES.FURNACE_RECIPES)
-		{
+		//}
+		//if(CFG.FOUNDATION.MOARRECIPES.FURNACE_RECIPES)
+		//{
 			logger.info("Adding Furnaces Recipes...");
 			addFurnace();
-		}
-		if(CFG.FOUNDATION.MOARRECIPES.DUNGEON_LOOT)
-		{
+		//}
+		//if(CFG.FOUNDATION.MOARRECIPES.DUNGEON_LOOT)
+		//{
 			logger.info("Adding Dungeon Loot...");
 			addDungeonLoot();
-		}
+		//}
 		
 		logger.info("Sucessfully Loaded!");
 		

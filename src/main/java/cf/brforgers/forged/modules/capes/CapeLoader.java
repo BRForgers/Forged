@@ -7,13 +7,10 @@ import java.util.List;
 
 import cf.brforgers.core.lib.CustomCapes;
 import cf.brforgers.core.lib.IOHelper;
-import cf.brforgers.forged.Forged;
+import cf.brforgers.forged.ForgedMod;
 import cf.brforgers.forged.modules.base.ForgedEvent;
 import cf.brforgers.forged.modules.base.ForgedEventState;
 import cf.brforgers.forged.modules.base.SimplerModule;
-import cf.brforgers.forged.CFG;
-import cf.brforgers.forged.CFG.FOUNDATION;
-import cf.brforgers.forged.CFG.FOUNDATION.CAPES;
 import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.config.Configuration;
@@ -35,10 +32,10 @@ public class CapeLoader extends SimplerModule {
 	public void load(ForgedEvent event) {
 		try {
 			loadServer(DEFAULT_SERVER);
-			for (String SERVER : CFG.FOUNDATION.CAPES.USER_SERVERS_LIST) {
-				loadServer(SERVER);
-			}
-			CustomCapes.parse(CFG.FOUNDATION.CAPES.USER_CAPES_FILE, true, false);
+			//for (String SERVER : CFG.FOUNDATION.CAPES.USER_SERVERS_LIST) {
+			//	loadServer(SERVER);
+			//}
+			//CustomCapes.parse(CFG.FOUNDATION.CAPES.USER_CAPES_FILE, true, false);
 		} catch (Exception e) {
 			// TODO: handle exception
 		}
