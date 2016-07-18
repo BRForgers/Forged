@@ -2,11 +2,11 @@ package cofh.thermaldynamics.core;
 
 import cofh.lib.util.helpers.ServerHelper;
 import cofh.thermaldynamics.multiblock.IMultiBlock;
-import cpw.mods.fml.common.eventhandler.SubscribeEvent;
-import cpw.mods.fml.common.gameevent.TickEvent;
-import cpw.mods.fml.common.gameevent.TickEvent.Phase;
-import cpw.mods.fml.common.gameevent.TickEvent.ServerTickEvent;
-import cpw.mods.fml.common.gameevent.TickEvent.WorldTickEvent;
+import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.fml.common.gameevent.TickEvent;
+import net.minecraftforge.fml.common.gameevent.TickEvent.Phase;
+import net.minecraftforge.fml.common.gameevent.TickEvent.ServerTickEvent;
+import net.minecraftforge.fml.common.gameevent.TickEvent.WorldTickEvent;
 import java.lang.ref.WeakReference;
 import java.util.Iterator;
 import java.util.LinkedHashSet;

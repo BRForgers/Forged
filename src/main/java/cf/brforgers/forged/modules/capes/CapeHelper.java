@@ -1,18 +1,12 @@
 package cf.brforgers.forged.modules.capes;
 
-import java.io.IOException;
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Map;
-
+import cf.brforgers.core.lib.IOHelper;
 import com.google.gson.Gson;
 
-import cf.brforgers.core.lib.IOHelper;
-
-import cf.brforgers.core.lib.CustomCapes.Helper;
+import java.net.URL;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
 
 public class CapeHelper {
 	private static final Gson gson = new Gson();
@@ -33,8 +27,7 @@ public class CapeHelper {
 	public static String[] follow(URL url, int max) { return follow(url, 0, max); }
 	
 	public static String[] follow(URL url, int i, int max) {
-		String dwld = null;
-		try { dwld = IOHelper.toString(url); } catch (IOException e) {}
+		String dwld = IOHelper.toString(url);
 		if (dwld == null) return new String[]{};
 		
 		String[] lines = dwld.split("\\r?\\n");
@@ -48,7 +41,7 @@ public class CapeHelper {
 				if (!valid) {
 					boolean isNowValid = true;
 					for (String line : lines) {
-						isNowValid = valid || (isNowValid && Helper.newURL(line) != null);
+						isNowValid = valid || (isNowValid && IOHelper.newURL(line) != null);
 					}
 					valid = valid || isNowValid;
 				}
@@ -56,7 +49,7 @@ public class CapeHelper {
 				if (valid) {
 					List<String> results = new ArrayList<String>();
 					for (String line : lines) {
-						String[] returned = follow(Helper.newURL(line), i+1, max);
+						String[] returned = follow(IOHelper.newURL(line), i + 1, max);
 						
 						for (String string : returned) if (string != null && !string.replaceAll("[\\s\\r\\n]","").equalsIgnoreCase("")) results.add(string);
 					}

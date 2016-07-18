@@ -1,6 +1,6 @@
 package cf.brforgers.forged.proxy;
 
-import cpw.mods.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.Side;
 
 public abstract class Proxy {
 	public void conditionalRun(Runnable runAtServer, Runnable runAtClient) {

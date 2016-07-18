@@ -1,8 +1,8 @@
 package cf.brforgers.forged;
 
 import cf.brforgers.forged.modules.base.Module;
-import cpw.mods.fml.common.SidedProxy;
-import cpw.mods.fml.relauncher.Side;
+import net.minecraftforge.fml.common.SidedProxy;
+import net.minecraftforge.fml.relauncher.Side;
 
 /**
  * 

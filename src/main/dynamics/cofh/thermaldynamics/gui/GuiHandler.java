@@ -3,7 +3,7 @@ package cofh.thermaldynamics.gui;
 import cofh.core.block.TileCoFHBase;
 import cofh.thermaldynamics.block.Attachment;
 import cofh.thermaldynamics.block.TileTDBase;
-import cpw.mods.fml.common.network.IGuiHandler;
+import net.minecraftforge.fml.common.network.IGuiHandler;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.world.World;

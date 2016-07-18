@@ -25,21 +25,21 @@ import cofh.thermaldynamics.item.ItemServo;
 import cofh.thermaldynamics.plugins.TDPlugins;
 import cofh.thermaldynamics.util.crafting.RecipeCover;
 import cofh.thermaldynamics.util.crafting.TDCrafting;
-import cpw.mods.fml.common.FMLCommonHandler;
-import cpw.mods.fml.common.Mod;
-import cpw.mods.fml.common.Mod.EventHandler;
-import cpw.mods.fml.common.Mod.Instance;
-import cpw.mods.fml.common.SidedProxy;
-import cpw.mods.fml.common.event.FMLInitializationEvent;
-import cpw.mods.fml.common.event.FMLLoadCompleteEvent;
-import cpw.mods.fml.common.event.FMLMissingMappingsEvent;
-import cpw.mods.fml.common.event.FMLMissingMappingsEvent.MissingMapping;
-import cpw.mods.fml.common.event.FMLPostInitializationEvent;
-import cpw.mods.fml.common.event.FMLPreInitializationEvent;
-import cpw.mods.fml.common.event.FMLServerStartingEvent;
-import cpw.mods.fml.common.eventhandler.EventBus;
-import cpw.mods.fml.common.network.NetworkRegistry;
-import cpw.mods.fml.common.registry.GameRegistry.Type;
+import net.minecraftforge.fml.common.FMLCommonHandler;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.common.Mod.EventHandler;
+import net.minecraftforge.fml.common.Mod.Instance;
+import net.minecraftforge.fml.common.SidedProxy;
+import net.minecraftforge.fml.common.event.FMLInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLLoadCompleteEvent;
+import net.minecraftforge.fml.common.event.FMLMissingMappingsEvent;
+import net.minecraftforge.fml.common.event.FMLMissingMappingsEvent.MissingMapping;
+import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLServerStartingEvent;
+import net.minecraftforge.fml.common.eventhandler.EventBus;
+import net.minecraftforge.fml.common.network.NetworkRegistry;
+import net.minecraftforge.fml.common.registry.GameRegistry.Type;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -53,7 +53,7 @@ import net.minecraftforge.oredict.RecipeSorter.Category;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-@Mod(modid="ThermalDynamics", name="Thermal Dynamics", version="1.7.10R1.2.0", dependencies="required-after:CoFHCore@[1.7.10R3.1.2,1.7.10R3.2.0);required-after:ThermalFoundation@[1.7.10R1.2.4,1.7.10R1.3.0);", guiFactory="cofh.thermaldynamics.gui.GuiConfigTDFactory", customProperties={@cpw.mods.fml.common.Mod.CustomProperty(k="cofhversion", v="true")})
+@Mod(modid="ThermalDynamics", name="Thermal Dynamics", version="1.7.10R1.2.0", dependencies="required-after:CoFHCore@[1.7.10R3.1.2,1.7.10R3.2.0);required-after:ThermalFoundation@[1.7.10R1.2.4,1.7.10R1.3.0);", guiFactory="cofh.thermaldynamics.gui.GuiConfigTDFactory", customProperties={@net.minecraftforge.fml.common.Mod.CustomProperty(k="cofhversion", v="true")})
 public class ThermalDynamics
   extends BaseMod
 {

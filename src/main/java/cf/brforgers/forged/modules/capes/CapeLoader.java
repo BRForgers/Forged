@@ -1,20 +1,14 @@
 package cf.brforgers.forged.modules.capes;
 
-import java.net.URL;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-
 import cf.brforgers.core.lib.CustomCapes;
-import cf.brforgers.core.lib.CustomCapes.Helper;
 import cf.brforgers.core.lib.IOHelper;
-import cf.brforgers.forged.ForgedMod;
 import cf.brforgers.forged.modules.base.ForgedEvent;
 import cf.brforgers.forged.modules.base.ForgedEventState;
 import cf.brforgers.forged.modules.base.SimplerModule;
-import net.minecraft.entity.player.EntityPlayerMP;
-import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.common.config.Configuration;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 public class CapeLoader extends SimplerModule {
 	public static final String DEFAULT_SERVER = "https://raw.githubusercontent.com/BRForgers/Versioning/master/Forged_Capes.pointer";
@@ -43,7 +37,7 @@ public class CapeLoader extends SimplerModule {
 	}
 	
 	public void loadServer(String str) {
-		String[] result = CapeHelper.follow(Helper.newURL(str), 10);
+		String[] result = CapeHelper.follow(IOHelper.newURL(str), 10);
 		logger.info("Loading " + result.length + " Cape Definition"+ (result.length == 1 ? "" : "s") +"... (Origin: \""+ str +"\")...");
 		List<Boolean> returnList = new ArrayList<Boolean>();
 		for (String server : result) {

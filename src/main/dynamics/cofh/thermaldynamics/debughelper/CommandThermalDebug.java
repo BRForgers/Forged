@@ -5,7 +5,7 @@ import cofh.lib.util.position.BlockPosition;
 import cofh.repack.codechicken.lib.raytracer.RayTracer;
 import cofh.thermaldynamics.block.TileTDBase;
 import com.google.common.base.Throwables;
-import cpw.mods.fml.relauncher.ReflectionHelper;
+import net.minecraftforge.fml.relauncher.ReflectionHelper;
 import java.lang.reflect.Field;
 import java.util.Iterator;
 import java.util.LinkedList;

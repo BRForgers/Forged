@@ -1,26 +1,19 @@
 package cf.brforgers.forged.modules.climi.wailawrecker;
 
+import cf.brforgers.forged.modules.ManagerHelper;
+import cf.brforgers.forged.modules.climi.CLiMI;
+import mcp.mobius.waila.server.ProxyServer;
+import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.fml.common.Loader;
+import net.minecraftforge.fml.common.ModContainer;
+import net.minecraftforge.fml.common.eventhandler.EventBus;
+import net.minecraftforge.fml.common.eventhandler.IEventListener;
+import net.minecraftforge.fml.relauncher.ReflectionHelper;
+
 import java.util.ArrayList;
 import java.util.Map.Entry;
 import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
-
-import cf.brforgers.core.lib.ModHelper;
-import cf.brforgers.forged.modules.ManagerHelper;
-import cf.brforgers.forged.modules.climi.CLiMI;
-import cpw.mods.fml.common.Loader;
-import cpw.mods.fml.common.ModContainer;
-import cpw.mods.fml.common.eventhandler.EventBus;
-import cpw.mods.fml.common.eventhandler.IEventListener;
-import cpw.mods.fml.relauncher.ReflectionHelper;
-import mcp.mobius.waila.server.ProxyServer;
-import net.minecraftforge.common.MinecraftForge;
-//import net.minecraftforge.fml.common.FMLCommonHandler;
-//import net.minecraftforge.fml.common.Loader;
-//import net.minecraftforge.fml.common.ModContainer;
-//import net.minecraftforge.fml.common.eventhandler.EventBus;
-//import net.minecraftforge.fml.common.eventhandler.IEventListener;
-//import net.minecraftforge.fml.relauncher.ReflectionHelper;
 
 /**
  * This is to cause some damage to WAILA
@@ -40,7 +33,7 @@ public class WailaWrecker {
 		} catch (Exception e) {
 			ManagerHelper.getLogger("WailaWrecker").error("Error while Waila Wrecking: ", e);
 		}
-		ModHelper.addEventsToBus(new CLiMI());
+		MinecraftForge.EVENT_BUS.register(new CLiMI());
 		unwrapProxy();
 	}
 	

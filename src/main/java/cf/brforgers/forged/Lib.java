@@ -1,7 +1,9 @@
 package cf.brforgers.forged;
 
-import static net.minecraft.util.EnumChatFormatting.*;
-//import net.minecraft.util.text.TextFormatting;
+//import static net.minecraft.util.EnumChatFormatting.*;
+
+import static net.minecraft.util.text.TextFormatting.BOLD;
+import static net.minecraft.util.text.TextFormatting.GOLD;
 
 /**
  * BRForgersCore's Strings Lib

@@ -13,16 +13,16 @@
 //
 //import cf.brforgers.forged.ForgedMod;
 //import cf.brforgers.forged.modules.climi.wailawrecker.WailaWrecker;
-//import cpw.mods.fml.common.Loader;
-//import cpw.mods.fml.common.LoaderState.ModState;
-//import cpw.mods.fml.common.event.FMLInitializationEvent;
-//import cpw.mods.fml.common.event.FMLPostInitializationEvent;
+//import net.minecraftforge.fml.common.Loader;
+//import net.minecraftforge.fml.common.LoaderState.ModState;
+//import net.minecraftforge.fml.common.event.FMLInitializationEvent;
+//import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 ////import net.minecraftforge.fml.common.Loader;
 ////import net.minecraftforge.fml.common.LoaderState.ModState;
 ////import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 ////import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 ////import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
-//import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+//import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 //
 //public class Helper {
 //	public static void pre() {

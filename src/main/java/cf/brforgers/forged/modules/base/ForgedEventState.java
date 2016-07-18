@@ -1,6 +1,6 @@
 package cf.brforgers.forged.modules.base;
 
-import cpw.mods.fml.common.event.FMLStateEvent;
+import net.minecraftforge.fml.common.event.FMLStateEvent;
 
 public enum ForgedEventState {
 	REGISTER, PREINITIALIZATION, INITIALIZATION, POSTINITIALIZATION, LOADCOMPLETE, EXTRA;

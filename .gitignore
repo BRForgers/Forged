@@ -1,62 +1,22 @@
-# Eclipse
-/bin
+# eclipse
+bin
 *.launch
-/.settings
-/.metadata
-/.classpath
-/.project
+.settings
+.metadata
+.classpath
+.project
 
-# IDEA
-/out
-/*.ipr
-/*.iws
-/*.iml
-/.idea
+# idea
+out
+*.ipr
+*.iws
+*.iml
+.idea
 
-# Gradle
-/build
+# gradle
+build
 .gradle
 
-## NetBeans
-/nbbuild
-/nbproject
-build.xml
-
-## NetBeans ProjectMC
-/config
-/crash-reports
-/mods
-/logs
-/saves
-/resourcepacks
-
-# Other
+# other
 eclipse
 run
-
-## OS Trash
-Thumbs.db
-._*
-.DocumentRevisions-V100
-.fseventsd
-.Spotlight-V100
-.TemporaryItems
-.Trashes
-.VolumeIcon.icns
-.AppleDB
-.AppleDesktop
-Network Trash Folder
-Temporary Items
-.apdisk
-.DS_Store
-.AppleDouble
-.LSOverride
-
-## Jars
-*.jar
-!/gradle/wrapper/gradle-wrapper.jar
-
-## BRForgersMods
-!/libs
-!/libs/*.jar
-/mergedSrc
